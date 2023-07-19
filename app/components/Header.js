@@ -115,7 +115,6 @@ const Header = () => {
             onClick={toggleMenu}
           />
         </div>
-
         {isMenuOpen && (
           <div
             className="fixed top-0 w-full h-full bg-teal-600 "
