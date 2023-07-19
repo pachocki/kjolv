@@ -2,7 +2,7 @@ import {
   PiStrategyBold as Strategy,
   PiDatabaseFill as Resources,
   PiBrainFill as Mindset,
-} from "react-icons/Pi";
+} from "react-icons/pi";
 import { BsPersonWorkspace as Workshops } from "react-icons/bs";
 import StickyCard from "./StickyCard";
 
