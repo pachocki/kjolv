@@ -46,9 +46,7 @@ const Header = () => {
     };
   }, [prevScrollPos]);
   return (
-    <nav
-      className="fixed right-0 top-0 w-full z-[9999] transition-all "
-    >
+    <nav className="fixed right-0 top-0 w-full z-[9999] transition-all ">
       <div
         className={` ${
           scrollBg
@@ -60,7 +58,6 @@ const Header = () => {
           <Link
             href="/"
             className="flex gap-2 items-center transition-all hover:opacity-50"
-            
           >
             <img
               className="w-10 h-10 lg:w-8 lg:h-8 "
@@ -70,16 +67,44 @@ const Header = () => {
             <span className="text-2xl font-bold lg:text-xl">Kjølv</span>
           </Link>
           <div className="flex gap-5 text-2xl font-bold sm:hidden lg:text-xl">
-          <Link href="/"    className={pathname == "/" ? "flex gap-2 items-center transition-all hover:opacity-50 text-teal-600 " : "  flex gap-2 items-center transition-all hover:opacity-50"}>
+            <Link
+              href="/"
+              className={
+                pathname == "/"
+                  ? "flex gap-2 items-center transition-all hover:opacity-50 text-teal-600 "
+                  : "  flex gap-2 items-center transition-all hover:opacity-50"
+              }
+            >
               Hjem
             </Link>
-            <Link href="/about" className={pathname == "/about" ? "flex gap-2 items-center transition-all hover:opacity-50 text-teal-600 " : "  flex gap-2 items-center transition-all hover:opacity-50"}>
+            <Link
+              href="/about"
+              className={
+                pathname == "/about"
+                  ? "flex gap-2 items-center transition-all hover:opacity-50 text-teal-600 "
+                  : "  flex gap-2 items-center transition-all hover:opacity-50"
+              }
+            >
               Om oss
             </Link>
-            <Link href="/services" className={pathname == "/services" ? "flex gap-2 items-center transition-all hover:opacity-50 text-teal-600 " : "  flex gap-2 items-center transition-all hover:opacity-50"}>
+            <Link
+              href="/services"
+              className={
+                pathname == "/services"
+                  ? "flex gap-2 items-center transition-all hover:opacity-50 text-teal-600 "
+                  : "  flex gap-2 items-center transition-all hover:opacity-50"
+              }
+            >
               Tjenester
             </Link>
-            <Link href="/contact" className={pathname == "/contact" ? "flex gap-2 items-center transition-all hover:opacity-50 text-teal-600 " : "  flex gap-2 items-center transition-all hover:opacity-50"}>
+            <Link
+              href="/contact"
+              className={
+                pathname == "/contact"
+                  ? "flex gap-2 items-center transition-all hover:opacity-50 text-teal-600 "
+                  : "  flex gap-2 items-center transition-all hover:opacity-50"
+              }
+            >
               Kontakt
             </Link>
           </div>
@@ -92,14 +117,16 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="fixed top-0 w-full h-full bg-teal-600 animate-fade-in">
-            
+          <div
+            className="fixed top-0 w-full h-full bg-teal-600 "
+            data-aos="fade-left"
+          >
             <div className="flex flex-col bg-teal-600 gap-5 text-2xl font-bold relative h-screen justify-center items-center transition-all animate-fade-in">
               <Close
                 className="text-2xl absolute top-6 right-5 text-white"
                 onClick={closeMenu}
               />
-                <Link
+              <Link
                 href="/"
                 className="text-4xl transition-all hover:text-teal-600"
                 onClick={closeMenu}
