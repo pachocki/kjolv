@@ -28,17 +28,17 @@ const OurTeam = () => {
           <TeamCard
             image="bgwwomen.png"
             title="Daglig Leder"
-            name="Roar Kjølv Jenssen"
+            name="Mary Vaernes"
           />
           <TeamCard
-            image="bgwwomen.png"
+            image="bgywomen.png"
             title="Daglig Leder"
-            name="Roar Kjølv Jenssen"
+            name="Beate Ringen"
           />
           <TeamCard
-            image="bgwwomen.png"
+            image="gwomen.png"
             title="Daglig Leder"
-            name="Roar Kjølv Jenssen"
+            name="Ann Aaberg"
           />
         </div>
       </div>
